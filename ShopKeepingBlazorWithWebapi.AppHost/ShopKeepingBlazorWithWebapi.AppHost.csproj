@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>5fff0325-b3f5-4dc3-b4ab-630885c15eb4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopKeepingBlazorWithWebapi.ApiService\ShopKeepingBlazorWithWebapi.ApiService.csproj" />
+    <ProjectReference Include="..\ShopKeepingBlazorWithWebapi.Web\ShopKeepingBlazorWithWebapi.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="13.1.2" />
+  </ItemGroup>
+
+</Project>
