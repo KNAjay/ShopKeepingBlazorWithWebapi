@@ -8,5 +8,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ShopKeepingBlazorWithWebapi.ServiceDefaults\ShopKeepingBlazorWithWebapi.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\ShopKeepingBL\ShopKeepingBL.csproj" />
+    <ProjectReference Include="..\ShopKeepingModels\ShopKeepingModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.14" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.1.5" />
   </ItemGroup>
 </Project>
